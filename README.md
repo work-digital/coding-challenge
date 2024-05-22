@@ -1,16 +1,23 @@
-# work digital
-## coding challenge
+# Work Digital
 
-Please pull this repository and adjust the project accordingly, so that we get a total of 10 products displayed in a single screen when accessing the `localhost:8000` url.
+## SetUp
 
-For displaying the products in the frontend, please use `Vue` and bundle with `vite`.
+1. cp .env.example .env
+2. composer install
+3. php artisan key:generate
+4. php artisan migrate
+5. php artisan db:seed
+6. php artisan serve
 
-Please also add a backend unit test to cover the controller functionallity.
+## Coding challenge
 
-Use the existing code as much as possible. Feel free to provide feedback with some commands if you would change some code.
+The project has one API endpoint that returns a list of products. The endpoint is located at `localhost:8000/api/products`.
 
-## How to participate?
-After pulling this project and finishing your coding, please provide a ZIP file of the project and share that with us.
+The specific tasks will be discussed in the meeting.
 
-## Duration
-We are expecting you, to not spend more than 30 minutes on this challenge. Keep it simple and clean, we want to know that you can work with Laravel and Vue.
+Task Ideas:
+
+1. Adjust the api so that query params can be used to limit the products amount.
+2. Adjust the api so that query params can be used to filter the products by title.
+3. Adjust the api so that query params can be used to sort the products by price.
+4. Add the Post endpoint to the API to create Products.
