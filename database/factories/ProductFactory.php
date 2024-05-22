@@ -21,6 +21,7 @@ class ProductFactory extends Factory
         return [
             'title' => $faker->word(),
             'description' => $faker->words(10, true),
+            'price' => $faker->randomFloat(2, 1, 100),
             'image' => $faker->imageUrl(360, 360, $faker->word(), true),
         ];
     }
